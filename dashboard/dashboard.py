@@ -9,9 +9,9 @@ import seaborn as sns
 st.set_page_config(layout="wide")
 
 # Import Dataframe
-day_df = pd.read_csv("../data/day.csv")
-hour_df = pd.read_csv("../data/hour.csv")
-bike_df = pd.read_csv("../data/day_clean.csv")
+day_df = pd.read_csv("https://raw.githubusercontent.com/riskydevandra/bike_sharing/main/data/day.csv")
+hour_df = pd.read_csv("https://raw.githubusercontent.com/riskydevandra/bike_sharing/main/data/hour.csv")
+bike_df = pd.read_csv("https://raw.githubusercontent.com/riskydevandra/bike_sharing/main/data/day_clean.csv")
 
 # Change the Data Type of the "dteday" Column 
 day_df["dteday"] = pd.to_datetime(day_df["dteday"])
